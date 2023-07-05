@@ -13,9 +13,14 @@
 .suggestion__list {
   display: flex;
   align-items: center;
-  column-gap: 30px;
+  flex-wrap: wrap;
   @include m.unstyled-list;
   margin-bottom: 50px;
+}
+
+.slick-track {
+  display: flex;
+  column-gap: 30px;
 }
 
 .suggestion__item {
@@ -64,14 +69,46 @@
   color: #213751b2;  
 }
 
-.suggestion__btn-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  column-gap: 9px;
+.suggestion__item:nth-child(4n) {
+  margin-left: 0;
 }
 
-.suggestion__btn {
-  padding: 0;
-  background-color: transparent;
-  border: none;
+.slick-prev {
+  position: absolute;
+  top: 439px;
+  left: 1081px;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-image: url("../../images/next.svg");
+  transform: rotate(180deg);
+  &:hover {
+    background-image: url("../../images/next.svg");
+  }
+  &:focus {
+    background-image: url("../../images/next.svg");
+  }
+  &::before {
+    display: block;
+    content: "";
+  }
+}
+.slick-next {
+  position: absolute;
+  top: 459px;
+  left: 1125px;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-image: url("../../images/next.svg");
+  &:hover {
+    background-image: url("../../images/next.svg");
+  }
+  &:focus {
+    background-image: url("../../images/next.svg")!important;
+  }
+  &::before {
+    display: block;
+    content: "";
+  }
 }

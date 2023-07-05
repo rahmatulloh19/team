@@ -890,7 +890,7 @@ img {
   background-image: url("../../images/next.svg");
 }
 .slick-next:focus {
-  background-image: url("../../images/next.svg") !important;
+  background-image: url("../../images/next.svg");
 }
 .slick-next::before {
   display: block;

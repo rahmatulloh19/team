@@ -1,0 +1,60 @@
+@use "../variables" as v;
+
+.hero {
+  padding-top: 43px;
+  padding-bottom: 214px;
+  color: #fff;
+}
+
+.hero__title-wrapper {
+  max-width: 491px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 67px;
+}
+
+.hero__desc-wrapper {
+  max-width: 397px;
+}
+
+.hero__desc {
+  margin-top: 0;
+  margin-bottom: 67px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 146.2%;
+}
+
+.hero__form {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.hero__input {
+  width: 298px;
+  padding: 14px 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175.7%;
+  border: none;
+  border-radius: 4px;
+  color: #6d7d8b;
+}
+
+.hero__btn {
+  min-width: 165px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  background-color: v.$main-link-color;
+  border: none;
+  border-radius: 4px;
+}

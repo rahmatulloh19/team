@@ -1,0 +1,35 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.teamwork {
+  padding: 317px 0;
+  background-image: url("../../images/teamwork.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 695px) center;
+}
+
+.teamwork__inner {
+  max-width: 466px;
+}
+
+.teamwork__title {
+  @include m.default-text(21px, v.$main-ff, 400, 55px, 67px, v.$main-text-color);
+}
+
+.teamwork__desc {
+  @include m.default-text(40px, v.$main-ff, 400, v.$main-fz, 30px, #213751b2);
+}
+
+.teamwork__link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: v.$main-link-color;
+  text-decoration: none;
+}
+
+.teamwork__link-decoration {
+  margin-left: 8px;
+}

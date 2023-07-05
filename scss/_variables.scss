@@ -1,0 +1,13 @@
+$main-ff: "Cabin", "Arial", sans-serif;
+$secondary-ff: "Mulish", "Arial", sans-serif;
+$main-fz: 18px;
+$main-text-color: #213751;
+$main-link-color: #0bcbff;
+
+:root {
+  --main-ff: var(#{$main-ff});
+  --secondary-ff: var(#{$secondary-ff});
+  --main-fz: var(#{$main-fz});
+  --main-text-color: var(#{$main-text-color});
+  --main-link-color: var(#{$main-link-color});
+}

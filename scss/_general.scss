@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: v.$main-ff;
+  font-size: v.$main-fz;
+  background-color: #f5f7fa;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+/* Sticky footer */
+
+.site-main {
+  flex-grow: 1;
+}

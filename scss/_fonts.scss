@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Cabin";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/cabinregular.woff2") format("woff2"),
+       url("../fonts/cabinregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Cabin";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/cabinmedium.woff2") format("woff2"),
+       url("../fonts/cabinmedium.woff") format("woff");
+       
+}
+@font-face {
+  font-family: "Cabin";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/cabinsemibold.woff2") format("woff2"),
+       url("../fonts/cabinsemibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Cabin";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/cabinbold.woff2") format("woff2"),
+       url("../fonts/cabinbold.woff") format("woff");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/mulishsemibold.woff2") format("woff2"),
+       url("../fonts/mulishsemibold.woff") format("woff");
+}

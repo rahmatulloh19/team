@@ -1,0 +1,37 @@
+@mixin layout($jc:space-between, $ai:center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin unstyled-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin default-text($mb, $ff, $fw, $fz, $lh, $c) {
+  margin-top: 0;
+  margin-bottom: $mb;
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: $c;
+}
+
+@mixin transition {
+  transition-property: color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+@mixin psevdo-el($w, $h, $bgi, $x, $y) {
+  display: block;
+  width: $w;
+  height: $h;
+  background-image: url($bgi);
+  background-position: $x $y;
+  content: "";
+}

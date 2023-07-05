@@ -1,0 +1,36 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.services {
+  padding-bottom: 151px;
+}
+
+.services__inner {
+  @include m.layout;
+}
+
+.services__inner-actually {
+  flex-direction: row-reverse;
+  margin-top: 150px;
+}
+
+.services__text-wrapper {
+  max-width: 466px;
+}
+
+.services__subtitle {
+  @include m.default-text(21px, v.$main-ff, 400, 55px, 67px, v.$main-text-color);
+}
+
+.services__desc {
+  @include m.default-text(40px, v.$main-ff, 400, v.$main-fz, 30px, v.$main-text-color);
+}
+
+.services__link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  color: v.$main-link-color;
+}

@@ -1,0 +1,77 @@
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.suggestion {
+  padding-bottom: 215px;
+}
+
+.suggestion__title {
+  @include m.default-text(118px, v.$main-ff, 400, 55px, 67px, v.$main-text-color);
+  text-align: center;
+}
+
+.suggestion__list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  @include m.unstyled-list;
+  margin-bottom: 50px;
+}
+
+.suggestion__item {
+  padding: 56px 22px 40px 42px;
+  background-color: #fff;
+  box-shadow: 0 10px 22px 1px #00000010;
+}
+
+.suggestion__item-inner {
+  max-width: 303px;
+  &::before {
+    @include m.psevdo-el(120px, 25px, "../../images/stars.svg", center, center);
+    margin-bottom: 25px;
+  }
+}
+
+.suggestion__desc {
+  @include m.default-text(72px, v.$secondary-ff, 400, v.$main-fz, 30px, v.$main-text-color);
+}
+
+.suggestion__user {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  &::before {
+    @include m.psevdo-el(56px, 57px, "../../images/vijay.png", center, center);
+  }
+}
+
+.suggestion__user-jenny::before {
+  background-image: url("../../images/jenny.png");
+}
+
+.suggestion__user-kristin::before {
+  background-image: url("../../images/kristin.png");
+}
+
+.suggestion__user-name {
+  @include m.default-text(0, v.$secondary-ff, 600, v.$main-fz, 29px, #25313c);  
+}
+
+.suggestion__company {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  color: #213751b2;  
+}
+
+.suggestion__btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 9px;
+}
+
+.suggestion__btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
